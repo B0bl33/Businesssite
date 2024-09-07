@@ -1,0 +1,355 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    margin: 5px 50px;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #000000; /* Change the background color here */
+    padding: 40px;
+    margin: 0;
+}
+
+nav img {
+    max-height: 50px;
+    
+}
+
+nav ul.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.nav-links li {
+    margin-left: 20px;
+}
+
+nav ul.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+    font-family: "Noto Sans", sans-serif;
+}
+
+nav ul.nav-links li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+nav ul.nav-links li a:hover::before {
+    width: 100%;
+}
+
+nav ul.nav-links li a:hover {
+    color: #0ce93c;
+}
+
+nav ul.nav-links li a:active {
+    color: #000000;
+}
+
+.menu-icon {
+    display: none; /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon img {
+    max-height: 30px;
+}
+
+
+.hero-section {
+    background-image: url('theherobg.jpeg'); /* Use the saved image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #fff; /* Ensure the text remains readable */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section img{
+    max-height: 450px;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+/* Custom Button Styles */
+.custom-btn-cta {
+    background-color: #0ce93c; /* Darker green to match the brand */
+    color: #ffffff; /* White text for contrast */
+    padding: 0.75rem 1.5rem; /* Padding for the button */
+    font-size: 18px; /* Button text size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    display: inline-block;
+    font-weight: 500; /* Slightly bold */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    border: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Effect */
+.custom-btn-cta:hover {
+    background-color: #218838;
+    color: #fff; /* Slightly darker green on hover */
+    transform: translateY(-3px); /* Slightly lift the button */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+/* Active Effect */
+.custom-btn-cta:active {
+    background-color: #1e7e34; /* Even darker green on click */
+    transform: translateY(1px); /* Button moves down slightly on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Reduced shadow on click */
+}
+
+/* Focus Effect */
+.custom-btn-cta:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); /* Add a glowing outline for focus */
+}
+
+
+
+
+
+
+.services-section {
+    background-color: #fff;
+}
+
+.service-card {
+    background-image: url('theherobg.jpeg'); /* Replace 'your-image.jpg' with the path to your background image */
+    background-size: cover; /* Ensure the image covers the entire card */
+    background-position: center; /* Center the image */
+    color: #fff; /* Change the text color to white */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent overlay for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for depth */
+    transition: transform 0.3s ease; /* Optional: Add hover effect */
+    height: 400px;
+}
+
+.service-card h4, .service-card p {
+    color: #fff; /* Ensure all text is white */
+}
+
+/* Optional: Add hover effect for a little interactivity */
+.service-card:hover {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}
+
+.service-icon {
+    width: 120px;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.about-section {
+    background-image: url('stripbgabout.jpeg');
+    color: #fff;
+    padding: 50px 0;
+}
+
+/* Customer Reviews Section */
+.reviews-section {
+    background-color: #fff; /* White background for the section */
+}
+
+.review-card {
+    background-image: url('theherobg.jpeg'); /* Use the same image background as service cards */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* White font color for readability */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent overlay */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Hover effect */
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.review-card h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Star styling */
+.review-stars {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.review-stars i {
+    color: #ffd700; /* Gold color for the stars */
+    font-size: 18px; /* Adjust star size */
+    margin: 0 2px; /* Spacing between stars */
+}
+
+/* Hover effect for review card */
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+.contact-section {
+    background-image: url('bg.jpeg');
+}
+
+.contact-section input,
+.contact-section textarea {
+    margin-bottom: 1rem;
+}
+
+
+#formheading{
+    color: #fff;
+}
+
+
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 1027px) {
+    nav ul.nav-links {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        z-index: 10;
+    }
+
+    nav ul.nav-links.active {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    nav ul.nav-links li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    nav ul.nav-links li a {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .hero-section img{
+        max-height: 350px;
+    }
+}
+/* Responsive adjustments for review cards */
+@media screen and (max-width: 768px) {
+    .review-card {
+        height: auto; /* Adjust the height for smaller screens */
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .hero-section img{
+        max-height: 250px;
+    }
+    .service-card {
+        height: 230px;
+    }
+    .service-icon {
+        width: 100px;
+        
+    }
+}
+@media screen and (max-width: 450px) {
+    .hero-section img{
+        max-height: 200px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .hero-section img{
+        max-height: 150px;
+    }
+    .service-icon {
+        width: 80px;  
+    }
+}
